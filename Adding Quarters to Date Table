@@ -1,0 +1,6 @@
+//Source: https://www.mssqltips.com/sqlservertip/4857/creating-a-date-dimension-table-in-power-bi/
+
+QuarterofYear = ROUNDUP (MONTH([Date])/3,0)
+
+Quarter = "Q" & [QuarterofYear] & " " & [Year]
+
